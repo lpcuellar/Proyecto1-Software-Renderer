@@ -38,14 +38,14 @@ class Render(object):
 
     ##  initiates the image with the width, height and background color
     def glInit(self, width, height, background):
-        background = color(1, 1, 1) if background == None else background
+        background = color(0.52, 0.81, 00.98) if background == None else background
         self.bg_color = background
 
         self.glCreateWindow(width, height)
 
         self.current_color = color(1, 1, 1)
 
-        self.light = [1, 0, 0]
+        self.light = [0, 1, 0]
         self.current_texture = None
         self.current_shader = None
 
